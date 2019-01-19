@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class Data {
     public static ArrayList<ToDo> todos = new ArrayList<>();
     static {
-        todos.add(new Todo("Do A"));
-        todos.add(new Todo("Do B"));
-        todos.add(new Todo("Do C"));
+        todos.add(new ToDo("Do A"));
+        todos.add(new ToDo("Do B"));
+        todos.add(new ToDo("Do C"));
     }
     public static class ToDo{
         public String title;
@@ -15,5 +15,4 @@ public class Data {
         @Override
         public String toString() { return "Todo: "+title; }
     }
-
 }

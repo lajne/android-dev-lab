@@ -12,7 +12,7 @@
         android:text="Title" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/enteredTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -23,5 +23,6 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="createButtonClicked"
         android:text="CREATE" />
 </LinearLayout>

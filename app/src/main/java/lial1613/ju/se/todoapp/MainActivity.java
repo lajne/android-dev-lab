@@ -13,8 +13,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void selectButtonClicked(View view) {
+        System.out.println("Select button clicked!");
+
+        Intent intent = new Intent(this, PickTodoActivity.class);
+        startActivity(intent);
+    }
+
     public void createButtonClicked(View view) {
-        System.out.println("Button clicked!");
+        System.out.println("Create button clicked!");
 
         Intent intent = new Intent(this, CreateActivity.class);
         startActivity(intent);

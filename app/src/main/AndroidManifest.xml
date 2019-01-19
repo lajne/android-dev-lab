@@ -19,5 +19,11 @@
         <activity android:name=".CreateActivity">
 
         </activity>
+        <activity android:name=".PickTodoActivity">
+
+        </activity>
+        <activity android:name=".ViewTodoActivity">
+
+        </activity>
     </application>
 </manifest>
