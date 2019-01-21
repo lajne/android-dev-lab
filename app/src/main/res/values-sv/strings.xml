@@ -2,6 +2,9 @@
 <resources>
     <string name="app_name">AttGöra App</string>
     <string name="btn_create">SKAPA</string>
-    <string name="btn_select">VÄLJ EN</string>
-    <string name="btn_delete">RADERA EN</string>
+    <string name="btn_select_one">VÄLJ EN</string>
+    <string name="btn_delete_one">RADERA EN</string>
+    <string name="btn_delete">RADERA</string>
+    <string name="static_title">Titel: </string>
+    <string name="alert_dialog_title">Radera ToDo</string>
 </resources>

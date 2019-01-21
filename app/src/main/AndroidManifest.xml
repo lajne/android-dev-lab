@@ -25,5 +25,8 @@
         <activity android:name=".ViewTodoActivity">
 
         </activity>
+        <activity android:name=".DeleteActivity">
+
+        </activity>
     </application>
 </manifest>

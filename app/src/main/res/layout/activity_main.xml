@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="selectButtonClicked"
-        android:text="@string/btn_select" />
+        android:text="@string/btn_select_one" />
 
     <Button
         android:id="@+id/button4"
@@ -23,5 +23,6 @@
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_delete" />
+        android:onClick="deleteButtonClicked"
+        android:text="@string/btn_delete_one" />
 </LinearLayout>

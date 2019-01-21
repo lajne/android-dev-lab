@@ -15,6 +15,9 @@ public class PickTodoActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pick_todo);
+        Intent intent = getIntent();
+        final String sender = intent.getStringExtra("sender");
+        System.out.println("sender: " + sender);
         ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(new ArrayAdapter<Data.ToDo>(
                 this,
@@ -24,11 +27,26 @@ public class PickTodoActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(PickTodoActivity.this, ViewTodoActivity.class);
-                String title = ((TextView) view).getText().toString();
-                intent.putExtra("todoIndex", title);
-                startActivity(intent);
+                if(sender.equals("select")) {
+                    Intent intent = new Intent(PickTodoActivity.this, ViewTodoActivity.class);
+                    String title = ((TextView) view).getText().toString();
+                    intent.putExtra("todoIndex", title);
+                    startActivity(intent);
+                } else {
+                    Intent intent = new Intent(PickTodoActivity.this, DeleteActivity.class);
+                    String title = ((TextView) view).getText().toString();
+                    intent.putExtra("todoIndex", title);
+                    intent.putExtra("todoPos", position);
+                    startActivity(intent);
+                }
             }
         });
+    }
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        //Refresh view
+        recreate();
+
     }
 }

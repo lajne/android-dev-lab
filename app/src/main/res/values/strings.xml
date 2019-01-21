@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">ToDo App</string>
     <string name="btn_create">CREATE</string>
-    <string name="btn_select">SELECT ONE</string>
-    <string name="btn_delete">DELETE ONE</string>
-    <string name="title">Title:</string>
+    <string name="btn_select_one">SELECT ONE</string>
+    <string name="btn_delete_one">DELETE ONE</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="static_title">Title: </string>
+    <string name="alert_dialog_title">Delete ToDo</string>
 </resources>

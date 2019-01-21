@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Select button clicked!");
 
         Intent intent = new Intent(this, PickTodoActivity.class);
+        intent.putExtra("sender", "select");
         startActivity(intent);
     }
 
@@ -24,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Create button clicked!");
 
         Intent intent = new Intent(this, CreateActivity.class);
+        startActivity(intent);
+    }
+
+    public void deleteButtonClicked(View view) {
+        System.out.println("Create button clicked!");
+
+        Intent intent = new Intent(this, PickTodoActivity.class);
+        intent.putExtra("sender", "delete");
         startActivity(intent);
     }
 }
